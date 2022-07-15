@@ -121,6 +121,7 @@
   /* Main Banner Area CSS */
   .banner-slider-area {
     position: relative;
+    height: 100%;
   }
   .banner-slider-area .owl-dots {
     display: inline-block;
@@ -147,6 +148,7 @@
   .banner-item-content {
     padding-top: 140px;
     padding-bottom: 130px;
+    H
   }
   .banner-item-content span {
     font-size: 15px;

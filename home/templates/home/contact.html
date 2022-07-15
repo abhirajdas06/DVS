@@ -1,155 +1,218 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block head %}
-<title>Digital Venture Solutions Zambia Ltd | One stop shop for all your ICT requirements</title>
-<meta content="Digital Venture Solutions Zambia Ltd | One stop shop for all your ICT requirements" name="description">
-<meta content="" name="keywords">
-<meta content="" name="author">
-{% endblock head %}
+{% extends 'base.html' %} {% load static %} {% block head %}
+<title>
+  Digital Venture Solutions Zambia Ltd | One stop shop for all your IT
+  requirements
+</title>
+<meta
+  content="Digital Venture Solutions Zambia Ltd | One stop shop for all your IT requirements"
+  name="description"
+/>
+<meta content="" name="keywords" />
+<meta content="" name="author" />
+{% endblock head %} {% block body %}
 
+<!-- Inner Banner -->
+<div class="inner-banner">
+  <div class="container">
+    <div class="inner-title text-center">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <i class="bx bx-chevrons-right"></i>
+        </li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+  </div>
+  <div class="inner-shape">
+    <img
+      src="{% static 'assets/images/shape/inner-shape.png' %}"
+      alt="Images"
+    />
+  </div>
+</div>
+<!-- Inner Banner End -->
 
-{% block body %}
+<!-- Contact Form Area -->
+<div class="contact-form-area pt-100 pb-70">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Let's Send Us a Message Below</h2>
+    </div>
 
+    <div class="row pt-45">
+      <div class="col-lg-4">
+        <div class="contact-info mr-20">
+          <span>Contact Info</span>
+          <h2>Let's Connect With Us</h2>
+          <p>
+            Are you ready to boost your company or career forward? Do you have
+            any questions or maybe just want to say hi? Contact us:
+          </p>
+          <ul>
+            <li>
+              <div class="content">
+                <i class="bx bx-phone-call"></i>
+                <h3>Phone Number</h3>
+                <a href="tel:+260 211 287717/">+260 211 287717</a>
+              </div>
+            </li>
 
+            <li>
+              <div class="content">
+                <i class="bx bxs-map"></i>
+                <h3>Address</h3>
+                <span
+                  >7218/7219, Light industrial area, Kachidza road P.O Box –
+                  35722, Lusaka, Zambia</span
+                >
+              </div>
+            </li>
 
-        <!-- Inner Banner -->
-        <div class="inner-banner">
-            <div class="container">
-                <div class="inner-title text-center">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <i class='bx bx-chevrons-right'></i>
-                        </li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="inner-shape">
-                <img src="{% static 'assets/images/shape/inner-shape.png' %}" alt="Images">
-            </div>
+            <li>
+              <div class="content">
+                <i class="bx bx-message"></i>
+                <h3>Contact Info</h3>
+                <a href="mailto:info@dvs.co.zm">info@dvs.co.zm</a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <!-- Inner Banner End -->
+      </div>
 
-        <!-- Contact Form Area -->
-        <div class="contact-form-area pt-100 pb-70">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2>Let's Send Us a Message Below</h2>
+      <div class="col-lg-8">
+        <div class="contact-form">
+          <form action="" method="POST">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  {% csrf_token %}
+                  <label>Your Name <span>*</span></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    required
+                    data-error="Please Enter Your Name"
+                    placeholder="Name"
+                  />
+                  <div class="help-block with-errors"></div>
                 </div>
+              </div>
 
-                <div class="row pt-45">
-                    <div class="col-lg-4">
-                        <div class="contact-info mr-20">
-                            <span>Contact Info</span>
-                            <h2>Let's Connect With Us</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet varius mi, ut hendrerit magna mollis ac. </p>
-                            <ul>
-                                <li>
-                                    <div class="content">
-                                        <i class='bx bx-phone-call'></i>
-                                        <h3>Phone Number</h3> 
-                                        <a href="tel:+1(212)-255-5511">+1 (212) 255-5511</a>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="content">
-                                        <i class='bx bxs-map'></i>
-                                        <h3>Address</h3> 
-                                        <span>124 Virgil A Virginia, USA</span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="content">
-                                        <i class='bx bx-message'></i>
-                                        <h3>Contact Info</h3>
-                                        <a href="mailto:hello@techex.com">hello@techex.com</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8">
-                        <div class="contact-form">
-                            <form id="contactForm">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label>Your Name <span>*</span></label>
-                                            <input type="text" name="name" id="name" class="form-control" required data-error="Please Enter Your Name" placeholder="Name">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label>Your Email <span>*</span></label>
-                                            <input type="email" name="email" id="email" class="form-control" required data-error="Please Enter Your Email" placeholder="Email">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label>Phone Number <span>*</span></label>
-                                            <input type="text" name="phone_number" id="phone_number" required data-error="Please Enter Your number" class="form-control" placeholder="Phone Number">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label>Your Subject <span>*</span></label>
-                                            <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please Enter Your Subject" placeholder="Your Subject">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group">
-                                            <label>Your Message <span>*</span></label>
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="8" required data-error="Write your message" placeholder="Your Message"></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="agree-label">
-                                            <input type="checkbox" id="chb1">
-                                            <label for="chb1">
-                                                Accept <a href="terms-condition.html">Terms & Conditions</a> And <a href="privacy-policy.html">Privacy Policy.</a>
-                                            </label>
-                                        </div>
-                                    </div>
-    
-                                    <div class="col-lg-12 col-md-12 text-center">
-                                        <button type="submit" class="default-btn btn-bg-two border-radius-50">
-                                            Send Message <i class='bx bx-chevron-right'></i>
-                                        </button>
-                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label>Your Email <span>*</span></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    required
+                    data-error="Please Enter Your Email"
+                    placeholder="Email"
+                  />
+                  <div class="help-block with-errors"></div>
                 </div>
-            </div>
-        </div>
-        <!-- Contact Form Area End -->
+              </div>
 
-        <!-- Map Area -->
-        <div class="map-area">
-            <div class="container-fluid m-0 p-0">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50194.82376159623!2d-79.09792989247224!3d38.159337740034566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b4a08eb8621697%3A0xe5d6e4710a09b66e!2sStaunton%2C%20VA%2024401%2C%20USA!5e0!3m2!1sen!2sbd!4v1607173226867!5m2!1sen!2sbd" ></iframe>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label>Phone Number <span>*</span></label>
+                  <input
+                    type="text"
+                    name="phone_number"
+                    id="phone_number"
+                    required
+                    data-error="Please Enter Your number"
+                    class="form-control"
+                    placeholder="Phone Number"
+                  />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label>Your Subject <span>*</span></label>
+                  <input
+                    type="text"
+                    name="msg_subject"
+                    id="msg_subject"
+                    class="form-control"
+                    required
+                    data-error="Please Enter Your Subject"
+                    placeholder="Your Subject"
+                  />
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12">
+                <div class="form-group">
+                  <label>Your Message <span>*</span></label>
+                  <textarea
+                    name="message"
+                    class="form-control"
+                    id="message"
+                    cols="30"
+                    rows="8"
+                    required
+                    data-error="Write your message"
+                    placeholder="Your Message"
+                  ></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12">
+                <div class="agree-label">
+                  <input type="checkbox" id="chb1" />
+                  <label for="chb1">
+                    Accept
+                    <a href="terms-condition.html">Terms & Conditions</a> And
+                    <a href="privacy-policy.html">Privacy Policy.</a>
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12 text-center">
+                <button
+                  type="submit"
+                  class="default-btn btn-bg-two border-radius-50"
+                >
+                  Send Message <i class="bx bx-chevron-right"></i>
+                </button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+              </div>
             </div>
+          </form>
         </div>
-        <!-- Map Area End -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Form Area End -->
+
+<!-- Map Area -->
+<div class="map-area">
+  <div class="container-fluid m-0 p-0">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15385.383407965446!2d28.2715016!3d-15.4118738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd196d91ef0a88e3d!2sDigital%20Venture%20Solutions%20(Z)%20Ltd!5e0!3m2!1sen!2sin!4v1656737909875!5m2!1sen!2sin"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
+<!-- Map Area End -->
 
 {% endblock body%}

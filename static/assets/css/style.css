@@ -91,9 +91,17 @@ img {
   padding-bottom: 100px;
 }
 
+.ptb-100-2 {
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
 .pt-100 {
   padding-top: 100px;
+  align-items: center;
+
 }
+
+
 
 .pt-80 {
   padding-top: 80px;
@@ -3343,7 +3351,7 @@ Counter Area End
 Case Study Area 
 =================================*/
 .case-study-area .section-title h2 {
-  max-width: 500px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -5096,7 +5104,9 @@ Blog Area End
 }
 
 .side-bar-area {
-  margin-left: 15px;
+  height: 1800 px;
+
+
 }
 
 .side-bar-widget {
