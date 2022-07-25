@@ -73,9 +73,9 @@ def netcore_cloud(request):
     # return HttpResponse("Hello vicisoft")
     return render(request, "netcore_cloud/netcore_cloud.html")
 
-def email_security(request):
+def security(request):
     # return HttpResponse("Hello vicisoft")
-    return render(request, "netcore_cloud/email_security.html")
+    return render(request, "netcore_cloud/security.html")
 
 def email_archive(request):
     # return HttpResponse("Hello vicisoft")

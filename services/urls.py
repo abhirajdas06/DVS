@@ -27,7 +27,7 @@ urlpatterns = [
 
     # NetCore Cloud url
     path('netcore_cloud',views.netcore_cloud,name="NetcoreCloud"),
-    path('email_security',views.email_security,name="EmailSecurity"),
+    path('security',views.security,name="Security"),
     path('email_archive',views.email_archive,name="EmailArchive"),
 
     # D-link Networking url    
