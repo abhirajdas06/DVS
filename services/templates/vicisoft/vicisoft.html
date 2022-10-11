@@ -18,12 +18,12 @@
       <h3>Vicisoft Software Services</h3>
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href="{% url 'Home' %}">Home</a>
         </li>
         <li>
           <i class="bx bx-chevrons-right"></i>
         </li>
-        <li>Vicisoft</li>
+        <li><a href="{% url 'Services' %}">Services</a></li>
       </ul>
     </div>
   </div>
@@ -47,7 +47,7 @@
     <div class="row pt-45">
       <div class="col-lg-4 col-md-6">
         <div class="case-study-item">
-          <a href="case-details.html">
+          <a href="{% url 'Doc_m' %}">
             <img
               src="{% static 'assets/images/services/doc_m.jpg' %}"
               alt="Images"
@@ -55,13 +55,13 @@
           </a>
           <div class="content">
             <h3>
-              <a href="case-details.html">Document Management Software</a>
+              <a href="{% url 'Doc_m' %}">Document Management Software</a>
             </h3>
             <ul>
-              <li><a href="case-details.html">Services</a></li>
-              <li><a href="case-details.html">Vicisoft</a></li>
+              <li><a href="{% url 'Services' %}">Services</a></li>
+              <li><a href="{% url 'Vicisoft' %}">Vicisoft</a></li>
             </ul>
-            <a href="case-details.html" class="more-btn"
+            <a href="{% url 'Doc_m' %}" class="more-btn"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -70,19 +70,19 @@
 
       <div class="col-lg-4 col-md-6">
         <div class="case-study-item">
-          <a href="case-details.html">
+          <a href="{% url 'Workflow' %}">
             <img
               src="{% static 'assets/images/services/workflow.jpg' %}"
               alt="Images"
             />
           </a>
           <div class="content">
-            <h3><a href="case-details.html">Web Development</a></h3>
+            <h3><a href="{% url 'Workflow' %}">Workflow Management Solution</a></h3>
             <ul>
-              <li><a href="case-details.html">Design</a></li>
-              <li><a href="case-details.html">Development</a></li>
+              <li><a href="{% url 'Services' %}">Services</a></li>
+              <li><a href="{% url 'Vicisoft' %}">Vicisoft</a></li>
             </ul>
-            <a href="case-details.html" class="more-btn"
+            <a href="{% url 'Workflow' %}" class="more-btn"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>

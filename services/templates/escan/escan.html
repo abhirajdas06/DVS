@@ -18,12 +18,12 @@
       <h3>eScan Antivirus</h3>
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href="{% url 'Home' %}">Home</a>
         </li>
         <li>
           <i class="bx bx-chevrons-right"></i>
         </li>
-        <li>eScan</li>
+        <li><a href="{% url 'Services' %}">Services</a></li>
       </ul>
     </div>
   </div>
@@ -47,7 +47,7 @@
     <div class="row pt-45">
       <div class="col-lg-4 col-md-6">
         <div class="case-study-item">
-          <a href="case-details.html">
+          <a href="{% url 'EnterpriseEdition' %}">
             <img
               src="{% static 'assets/images/services/ent_ed.jpg' %}"
               alt="Images"
@@ -55,13 +55,13 @@
           </a>
           <div class="content">
             <h3>
-              <a href="case-details.html">eScan Enterprise Edition</a>
+              <a href="{% url 'EnterpriseEdition' %}">eScan Enterprise Edition</a>
             </h3>
             <ul>
-              <li><a href="case-details.html">Services</a></li>
-              <li><a href="case-details.html">eScan</a></li>
+              <li><a href="{% url 'Services' %}">Services</a></li>
+              <li><a href="{% url 'Escan' %}">eScan</a></li>
             </ul>
-            <a href="case-details.html" class="more-btn"
+            <a href="{% url 'EnterpriseEdition' %}" class="more-btn"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -70,19 +70,19 @@
 
       <div class="col-lg-4 col-md-6">
         <div class="case-study-item">
-          <a href="case-details.html">
+          <a href="{% url 'TotalSecurity' %}">
             <img
               src="{% static 'assets/images/services/total_sec.jpg' %}"
               alt="Images"
             />
           </a>
           <div class="content">
-            <h3><a href="case-details.html">eScan Total Security</a></h3>
+            <h3><a href="{% url 'TotalSecurity' %}">eScan Total Security</a></h3>
             <ul>
-              <li><a href="case-details.html">Services</a></li>
-              <li><a href="case-details.html">eScan</a></li>
+              <li><a href="{% url 'Services' %}">Services</a></li>
+              <li><a href="{% url 'Escan' %}">eScan</a></li>
             </ul>
-            <a href="case-details.html" class="more-btn"
+            <a href="{% url 'TotalSecurity' %}" class="more-btn"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>

@@ -267,16 +267,16 @@
                         </li>
 
                         </ul>
-                        <div class="nav-side d-display">
+                        {% comment %} <div class="nav-side d-display">
                             <div class="nav-side-item">
                                 <div class="search-box">
                                     <i class="bx bx-search"></i>
                                 </div>
-                            </div>
+                            </div> {% endcomment %}
 
                             <div class="nav-side-item">
                                 <div class="get-btn">
-                                    <a href="contact.html" class="default-btn btn-bg-two border-radius-50">Get A Quote
+                                    <a href="{% url 'Contact' %}" class="default-btn btn-bg-two border-radius-50">Get A Quote
                                         <i class="bx bx-chevron-right"></i></a>
                                 </div>
                             </div>
@@ -364,9 +364,10 @@
                             {% endcomment %}
                             <h3>Digital Venture Solutions Zambia Ltd</h3>
                             <p>
-                                Proin gravida nibh vel velit auctor aliquet. Aenean
-                                sollicitudin, lorem quis bibendum auct.Aenean, lorem quis
-                                bibendum auct. Aenean sollicitudin lorem.
+                                We name ourselves a crew of complete IT solution providers. 
+                                An associate that could rework the manner your business operates. 
+                                Our commitment to delivering impact-driven results and the use of 
+                                the latest technology is something that drives your business growth.
                             </p><a href="tel:+260 211 287717">
                             <div class="footer-call-content">
                                 <h3>Talk to Our Experts</h3>
@@ -378,55 +379,81 @@
 
                     <div class="col-lg-2 col-sm-6">
                         <div class="footer-widget pl-2">
+                            <h3>Useful Links</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="{% url 'Home' %}" target="_blank">
+                                        <i class="bx bx-chevron-right"></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'About' %}" target="_blank">
+                                        <i class="bx bx-chevron-right"></i>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'Services' %}" target="_blank">
+                                        <i class="bx bx-chevron-right"></i>
+                                        Services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'Contact' %}" target="_blank">
+                                        <i class="bx bx-chevron-right"></i>
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'Blog' %}" target="_blank">
+                                        <i class="bx bx-chevron-right"></i>
+                                        Blog
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="footer-widget pl-2">
                             <h3>Services</h3>
                             <ul class="footer-list">
                                 <li>
-                                    <a href="service-details.html" target="_blank">
+                                    <a href="{% url 'Vicisoft' %}" target="_blank">
                                         <i class="bx bx-chevron-right"></i>
-                                        IT Consultancy
+                                        Vici Software
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="service-details.html" target="_blank">
+                                    <a href="{% url 'Escan' %}" target="_blank">
                                         <i class="bx bx-chevron-right"></i>
-                                        Business Solution
+                                        Escan
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="service-details.html" target="_blank">
+                                    <a href="{% url 'SharpEducation' %}" target="_blank">
                                         <i class="bx bx-chevron-right"></i>
-                                        Digital Services
+                                        Sharp Education
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="compare.html" target="_blank">
+                                    <a href="{% url 'NetcoreCloud' %}" target="_blank">
                                         <i class="bx bx-chevron-right"></i>
-                                        Business Reform
+                                        Netcore Cloud
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="service-details.html" target="_blank">
+                                    <a href="{% url 'Networking' %}" target="_blank">
                                         <i class="bx bx-chevron-right"></i>
-                                        Web Development
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="service-details.html" target="_blank">
-                                        <i class="bx bx-chevron-right"></i>
-                                        Cloud Computing
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="service-details.html" target="_blank">
-                                        <i class="bx bx-chevron-right"></i>
-                                        Data Analysis
+                                        Networking
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-sm-6">
+                    {% comment %} <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget pl-5">
                             <h3>Our Blog</h3>
                             <ul class="footer-blog">
@@ -469,15 +496,13 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> {% endcomment %}
 
                     <div class="col-lg-3 col-sm-6">
                         <div class="footer-widget">
                             <h3>Newsletter</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Vestibulum finibus molestie molestie. Phasellus ac rutrum
-                                massa, et volutpat nisl. Fusce ultrices suscipit nisl.
+                                Sign up to receive more information and updates about IT Services.
                             </p>
                             <div class="newsletter-area">
                                 <form class="newsletter-form" data-toggle="validator" method="POST">

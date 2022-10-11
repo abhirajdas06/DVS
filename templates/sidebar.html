@@ -2,34 +2,7 @@
 <div class="col-lg-4">
   <div class="side-bar-area">
     <div class="side-bar-widget">
-      <h3 class="title">Our Services</h3>
-      <div class="side-bar-categories">
-        <ul>
-          <li>
-            <div class="line-circle"></div>
-            <a href="service-details.html" target="_blank">IT Services</a>
-          </li>
-          <li>
-            <div class="line-circle"></div>
-            <a href="service-details.html" target="_blank">Cloud Computing</a>
-          </li>
-          <li>
-            <div class="line-circle"></div>
-            <a href="service-details.html" target="_blank">Web Development</a>
-          </li>
-          <li>
-            <div class="line-circle"></div>
-            <a href="service-details.html" target="_blank">Business Reform</a>
-          </li>
-          <li>
-            <div class="line-circle"></div>
-            <a href="service-details.html" target="_blank">Infrastructure</a>
-          </li>
-          <li>
-            <div class="line-circle"></div>
-            <a href="service-details.html" target="_blank">Data Analysis</a>
-          </li>
-        </ul>
+      
       </div>
     </div>
 <!-- Contact Form Area -->
@@ -122,14 +95,14 @@
               </div>
 
               <div class="col-lg-12 col-md-12">
-                <div class="agree-label">
+                {% comment %} <div class="agree-label">
                   <input type="checkbox" id="chb1" />
                   <label for="chb1">
                     Accept
                     <a href="terms-condition.html">Terms & Conditions</a> And
                     <a href="privacy-policy.html">Privacy Policy.</a>
                   </label>
-                </div>
+                </div> {% endcomment %}
               </div>
 
               <div class="col-lg-12 col-md-12 text-center">
@@ -144,7 +117,41 @@
               </div>
             </div>
           </form>
-        </div>
+          <h3 class="title">Our Services</h3>
+          <div class="side-bar-categories">
+            <ul>
+                <li>
+                    <a href="{% url 'Vicisoft' %}" target="_blank">
+                    <h6>
+                        Vici Software</h6>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'Escan' %}" target="_blank">
+                       <h6>
+                        Escan</h6>
+             </a>
+                </li>
+                <li>
+                    <a href="{% url 'SharpEducation' %}" target="_blank">
+                      <h6>
+                        Sharp Education</h6>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'NetcoreCloud' %}" target="_blank">
+                        <h6>
+                        Netcore Cloud</h6>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'Networking' %}" target="_blank">
+                        <h6>
+                        Networking</h6>
+                </a>
+                </li>
+            </ul>
+          </div>
       </div>
     </div>
   </div>

@@ -18,12 +18,12 @@
       <h3>Sharp Education Solutions</h3>
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href="{% url 'Home' %}">Home</a>
         </li>
         <li>
           <i class="bx bx-chevrons-right"></i>
         </li>
-        <li>Sharp Education</li>
+        <li><a href="{% url 'Services' %}">Services</a></li>
       </ul>
     </div>
   </div>
@@ -47,19 +47,19 @@
     <div class="row pt-45">
       <div class="col-lg-4 col-md-6">
         <div class="case-study-item">
-          <a href="case-details.html">
+          <a href="{% url 'TouchBoards' %}">
             <img
               src="{% static 'assets/images/services/touch_board.jpg' %}"
               alt="Images"
             />
           </a>
           <div class="content">
-            <h3><a href="case-details.html">Intelligent Touch Boards </a></h3>
+            <h3><a href="{% url 'TouchBoards' %}">Intelligent Touch Boards </a></h3>
             <ul>
-              <li><a href="case-details.html">Services</a></li>
-              <li><a href="case-details.html">eScan</a></li>
+              <li><a href="{% url 'Services' %}">Services</a></li>
+              <li><a href="{% url 'SharpEducation' %}">Sharp Education</a></li>
             </ul>
-            <a href="case-details.html" class="more-btn"
+            <a href="{% url 'TouchBoards' %}" class="more-btn"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -68,19 +68,19 @@
 
       <div class="col-lg-4 col-md-6">
         <div class="case-study-item">
-          <a href="case-details.html">
+          <a href="{% url 'SharpSignage' %}">
             <img
               src="{% static 'assets/images/services/signage.jpg' %}"
               alt="Images"
             />
           </a>
           <div class="content">
-            <h3><a href="case-details.html">Signage Solutions</a></h3>
+            <h3><a href="{% url 'SharpSignage' %}">Signage Solutions</a></h3>
             <ul>
-              <li><a href="case-details.html">Services</a></li>
-              <li><a href="case-details.html">eScan</a></li>
+              <li><a href="{% url 'Services' %}">Services</a></li>
+              <li><a href="{% url 'SharpEducation' %}">Sharp Education</a></li>
             </ul>
-            <a href="case-details.html" class="more-btn"
+            <a href="{% url 'SharpSignage' %}" class="more-btn"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -89,19 +89,19 @@
 
       <div class="col-lg-4 col-md-6">
         <div class="case-study-item">
-          <a href="case-details.html">
+          <a href="{% url 'ClassroomManagement' %}">
             <img
               src="{% static 'assets/images/services/class_m.jpg' %}"
               alt="Images"
             />
           </a>
           <div class="content">
-            <h3><a href="case-details.html">Classroom Management</a></h3>
+            <h3><a href="{% url 'ClassroomManagement' %}">Classroom Management</a></h3>
             <ul>
-              <li><a href="case-details.html">Services</a></li>
-              <li><a href="case-details.html">eScan</a></li>
+              <li><a href="{% url 'Services' %}">Services</a></li>
+              <li><a href="{% url 'SharpEducation' %}">Sharp Education</a></li>
             </ul>
-            <a href="case-details.html" class="more-btn"
+            <a href="{% url 'ClassroomManagement' %}" class="more-btn"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -111,7 +111,7 @@
       <div class="row pt-45">
         <div class="col-lg-4 col-md-6">
           <div class="case-study-item">
-            <a href="case-details.html">
+            <a href="{% url 'LearningManagement' %}">
               <img
                 src="{% static 'assets/images/services/learn_m.jpg' %}"
                 alt="Images"
@@ -119,13 +119,13 @@
             </a>
             <div class="content">
               <h3>
-                <a href="case-details.html">Learning Management </a>
+                <a href="{% url 'LearningManagement' %}">Learning Management </a>
               </h3>
               <ul>
-                <li><a href="case-details.html">Services</a></li>
-                <li><a href="case-details.html">eScan</a></li>
+                <li><a href="{% url 'Services' %}">Services</a></li>
+                <li><a href="{% url 'SharpEducation' %}">Sharp Education</a></li>
               </ul>
-              <a href="case-details.html" class="more-btn"
+              <a href="{% url 'LearningManagement' %}" class="more-btn"
                 ><i class="bx bx-right-arrow-alt"></i
               ></a>
             </div>
@@ -134,19 +134,19 @@
 
         <div class="col-lg-4 col-md-6">
           <div class="case-study-item">
-            <a href="case-details.html">
+            <a href="{% url 'InteractiveContent' %}">
               <img
                 src="{% static 'assets/images/services/int_cont.jpg' %}"
                 alt="Images"
               />
             </a>
             <div class="content">
-              <h3><a href="case-details.html">Interactive Content</a></h3>
+              <h3><a href="{% url 'InteractiveContent' %}">Interactive Content</a></h3>
               <ul>
-                <li><a href="case-details.html">Services</a></li>
-                <li><a href="case-details.html">eScan</a></li>
+                <li><a href="{% url 'Services' %}">Services</a></li>
+                <li><a href="{% url 'SharpEducation' %}">Sharp Education</a></li>
               </ul>
-              <a href="case-details.html" class="more-btn"
+              <a href="{% url 'InteractiveContent' %}" class="more-btn"
                 ><i class="bx bx-right-arrow-alt"></i
               ></a>
             </div>

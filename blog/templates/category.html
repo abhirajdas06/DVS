@@ -15,7 +15,10 @@
 <div class="inner-banner">
   <div class="container">
     <div class="inner-title text-center">
-      <h3>Blog Style Two</h3>
+      <h3>{{cats}}
+        {{post.category}}
+        {{category}}
+      </h3>
       <ul>
         <li>
           <a href="index.html">Home</a>
@@ -38,17 +41,17 @@
   <div class="container">
     <div class="section-title text-center">
       <span class="sp-color2">Latest Blog</span>
-      <h2>Let’s Check Some Latest Blog</h2>
+      <h2>{{category.title}}</h2>
     </div>
 
     {% comment %} blog list {% endcomment %}
     <div class="row pt-45">
-      {% for post in object_list %}
+      {% for post in category.posts.all %}
       <div class="col-lg-4 col-md-6">
         <div class="blog-card">
           <div class="blog-img">
             <a href="{% url 'BlogDetail' post.slug%}">
-              <img src="{{post.image.url}}" alt="Blog Images" width="" height="303"/>
+              <img src="{% static 'assets/images/blog/blog-img1.jpg' %}" alt="Blog Images" />
             </a>
             <div class="blog-tag">
               <h3>{{post.date|date:"d"}}</h3>
@@ -62,13 +65,13 @@
                   {{post.author.last_name}}
               </li>
               <li>
-                <a href="{%url 'Category' post.category.slug%}"
+                <a href="{% url 'BlogDetail' post.slug%}"
                   ><i class="bx bx-purchase-tag-alt"></i>{{post.category}}</a
                 >
               </li>
             </ul>
             <h3>
-              <a href="{% url  'BlogDetail' post.slug%}">{{post.title}} </a>
+              <a href="{% url 'BlogDetail' post.slug%}">{{post.title}} </a>
             </h3>
             <p>{{ post.body|slice:'0:150'|safe }} 
             </p>
@@ -76,7 +79,7 @@
         </div>
       </div>
       {% endfor %} {% comment %} blog list {% endcomment %}
-{% comment %} 
+
       <div class="col-lg-12 col-md-12 text-center">
         <div class="pagination-area">
           <a href="blog-2.html" class="prev page-numbers">
@@ -91,7 +94,7 @@
             <i class="bx bx-right-arrow-alt"></i>
           </a>
         </div>
-      </div> {% endcomment %}
+      </div>
     </div>
   </div>
 </div>

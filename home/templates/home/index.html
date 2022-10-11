@@ -26,9 +26,9 @@
                                 nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
                             </p> {% endcomment %}
                             <div class="banner-btn">
-                                <a href="about.html" class="default-btn btn-bg-two border-radius-50">Learn More <i
+                                <a href="{% url 'About' %}" class="default-btn btn-bg-two border-radius-50">Learn More <i
                                         class='bx bx-chevron-right'></i></a>
-                                <a href="contact.html" class="default-btn btn-bg-one border-radius-50 ml-20">Get A Quote
+                                <a href="{% url 'Contact' %}" class="default-btn btn-bg-one border-radius-50 ml-20">Get A Quote
                                     <i class='bx bx-chevron-right'></i></a>
                             </div>
                         </div>
@@ -49,9 +49,9 @@
                                 nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
                             </p> {% endcomment %}
                             <div class="banner-btn">
-                                <a href="about.html" class="default-btn btn-bg-two border-radius-50">Learn More <i
+                                <a href="{% url 'About' %}" class="default-btn btn-bg-two border-radius-50">Learn More <i
                                         class='bx bx-chevron-right'></i></a>
-                                <a href="contact.html" class="default-btn btn-bg-one border-radius-50 ml-20">Get A Quote
+                                <a href="{% url 'Contact' %}" class="default-btn btn-bg-one border-radius-50 ml-20">Get A Quote
                                     <i class='bx bx-chevron-right'></i></a>
                             </div>
                         </div>
@@ -72,9 +72,9 @@
                                 nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
                             </p> {% endcomment %}
                             <div class="banner-btn">
-                                <a href="about.html" class="default-btn btn-bg-two border-radius-50">Learn More <i
+                                <a href="{% url 'About' %}" class="default-btn btn-bg-two border-radius-50">Learn More <i
                                         class='bx bx-chevron-right'></i></a>
-                                <a href="contact.html" class="default-btn btn-bg-one border-radius-50 ml-20">Get A Quote
+                                <a href="{% url 'Contact' %}" class="default-btn btn-bg-one border-radius-50 ml-20">Get A Quote
                                     <i class='bx bx-chevron-right'></i></a>
                             </div>
                         </div>
@@ -161,69 +161,69 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="services-card">
                     {% comment %} <i class="flaticon-consultant"></i> {% endcomment %}
-                    <h3><a href="service-details.html">Vicisoft Software Solutions</a></h3>
+                    <h3><a href="{% url 'Vicisoft' %}">Vicisoft Software Solutions</a></h3>
                     <p>We offer best IT management solutions for medium and large enterprises. </p>
-                    <a href="service-details.html" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
+                    <a href="{% url 'Vicisoft' %}" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6">
                 <div class="services-card">
                     {% comment %} <i class="flaticon-consulting"></i> {% endcomment %}
-                    <h3><a href="service-details.html">eScan range of Antivirus</a></h3>
+                    <h3><a href="{% url 'Escan' %}">eScan range of Antivirus</a></h3>
                     <p>We offer internet security solution that provides virus protection to businesses and home.</p>
-                    <a href="service-details.html" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
+                    <a href="{% url 'Escan' %}" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6">
                 <div class="services-card">
                     {% comment %} <i class="flaticon-web-development"></i> {% endcomment %}
-                    <h3><a href="service-details.html">Sharp Education Solution</a></h3>
+                    <h3><a href="{% url 'SharpEducation' %}">Sharp Education Solution</a></h3>
                     <p>With its core ‘Education through Innovation’ Sharp offers to change the way Education</p>
-                    <a href="service-details.html" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
+                    <a href="{% url 'SharpEducation' %}" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6">
                 <div class="services-card">
                     {% comment %} <i class="flaticon-stats"></i> {% endcomment %}
-                    <h3><a href="service-details.html">Netcore Email Services</a></h3>
+                    <h3><a href="{% url 'NetcoreCloud' %}">Netcore Email Services</a></h3>
                     <p>Build and grow your email program with the most advanced AI-powered email platform.</p>
-                    <a href="service-details.html" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
+                    <a href="{% url 'NetcoreCloud' %}" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="services-card">
                     {% comment %} <i class="flaticon-stats"></i> {% endcomment %}
-                    <h3><a href="service-details.html">Networking Cable</a></h3>
+                    <h3><a href="{% url 'Cable' %}">Networking Cable</a></h3>
                     <p>Structured Cabling solution is a perfect choice for any business looking to build business
                         network. </p>
-                    <a href="service-details.html" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
+                    <a href="{% url 'Cable' %}" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="services-card">
                     {% comment %} <i class="flaticon-stats"></i> {% endcomment %}
-                    <h3><a href="service-details.html">Router</a></h3>
+                    <h3><a href="{% url 'Router' %}">Router</a></h3>
                     <p>Top performing WiFi Routers, so you can game online, stream movies, shop and more.</p>
-                    <a href="service-details.html" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
+                    <a href="{% url 'Router' %}" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="services-card">
                     {% comment %} <i class="flaticon-stats"></i> {% endcomment %}
-                    <h3><a href="service-details.html">Switches</a></h3>
+                    <h3><a href="{% url 'Switch' %}">Switches</a></h3>
                     <p>Our future-ready data center switches are packed with the latest hardware. </p>
-                    <a href="service-details.html" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
+                    <a href="{% url 'Switch' %}" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="services-card">
                     {% comment %} <i class="flaticon-stats"></i> {% endcomment %}
-                    <h3><a href="service-details.html">End-point Security</a></h3>
+                    <h3><a href="{% url 'EndpointSecurity' %}">End-point Security</a></h3>
                     <p>Using Artificial intelligence to protect the personal and professional you. </p>
-                    <a href="service-details.html" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
+                    <a href="{% url 'EndpointSecurity' %}" class="learn-btn">Learn More <i class='bx bx-chevron-right'></i></a>
                 </div>
             </div>
         </div>
@@ -302,7 +302,7 @@
 
             <div class="col-lg-4 col-md-4">
                 <div class="build-btn-area">
-                    <a href="contact.html" class="default-btn btn-bg-two border-radius-50">Contact Us <i
+                    <a href="{% url 'Contact' %}" class="default-btn btn-bg-two border-radius-50">Contact Us <i
                             class='bx bx-chevron-right'></i></a>
                 </div>
             </div>
@@ -324,7 +324,7 @@
 <!-- Build Area End -->
 
 <!-- Counter Area -->
-<div class="counter-area pb-70">
+{% comment %} <div class="counter-area pb-70">
     <div class="container">
         <div class="section-title text-center">
             <span class="sp-color2">Numbers Are Talking</span>
@@ -375,7 +375,7 @@
             <img src="{% static 'assets/images/shape/shape2.png' %}" alt="Images">
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 <!-- Counter Area End -->
 
 <!-- Call Area -->
@@ -567,28 +567,52 @@
     <div class="container">
         <div class="brand-slider owl-carousel owl-theme">
             <div class="brand-item">
-                <img src="{% static 'assets/images/brand-logo/brand-logo1.png' %}" class="brand-logo-one" alt="Images">
-                <img src="{% static 'assets/images/brand-logo/brand-style1.png' %}" class="brand-logo-two" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/kaspersky.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/kaspersky.png' %}" class="brand-logo-two" alt="Images">
             </div>
             <div class="brand-item">
-                <img src="{% static 'assets/images/brand-logo/brand-logo2.png' %}" class="brand-logo-one" alt="Images">
-                <img src="{% static 'assets/images/brand-logo/brand-style2.png' %}" class="brand-logo-two" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/apc.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/apc.png' %}" class="brand-logo-two" alt="Images">
             </div>
             <div class="brand-item">
-                <img src="{% static 'assets/images/brand-logo/brand-logo3.png' %}" class="brand-logo-one" alt="Images">
-                <img src="{% static 'assets/images/brand-logo/brand-style3.png' %}" class="brand-logo-two" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/bitdefender.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/bitdefender.png' %}" class="brand-logo-two" alt="Images">
             </div>
             <div class="brand-item">
-                <img src="{% static 'assets/images/brand-logo/brand-logo4.png' %}" class="brand-logo-one" alt="Images">
-                <img src="{% static 'assets/images/brand-logo/brand-style4.png' %}" class="brand-logo-two" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/canon.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/canon.png' %}" class="brand-logo-two" alt="Images">
             </div>
             <div class="brand-item">
-                <img src="{% static 'assets/images/brand-logo/brand-logo5.png' %}" class="brand-logo-one" alt="Images">
-                <img src="{% static 'assets/images/brand-logo/brand-style5.png' %}" class="brand-logo-two" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/cisco.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/cisco.png' %}" class="brand-logo-two" alt="Images">
             </div>
             <div class="brand-item">
-                <img src="{% static 'assets/images/brand-logo/brand-logo3.png' %}" class="brand-logo-one" alt="Images">
-                <img src="{% static 'assets/images/brand-logo/brand-style3.png' %}" class="brand-logo-two" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/dell.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/dell.png' %}" class="brand-logo-two" alt="Images">
+            </div>
+            <div class="brand-item">
+                <img src="{% static 'assets/images/brand-logo/epson.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/epson.png' %}" class="brand-logo-two" alt="Images">
+            </div>
+            <div class="brand-item">
+                <img src="{% static 'assets/images/brand-logo/fortinet.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/fortinet.png' %}" class="brand-logo-two" alt="Images">
+            </div>
+            <div class="brand-item">
+                <img src="{% static 'assets/images/brand-logo/hp.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/hp.png' %}" class="brand-logo-two" alt="Images">
+            </div>
+            <div class="brand-item">
+                <img src="{% static 'assets/images/brand-logo/lenovo.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/lenovo.png' %}" class="brand-logo-two" alt="Images">
+            </div>
+            <div class="brand-item">
+                <img src="{% static 'assets/images/brand-logo/microsoft.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/microsoft.png' %}" class="brand-logo-two" alt="Images">
+            </div>
+            <div class="brand-item">
+                <img src="{% static 'assets/images/brand-logo/poly.png' %}" class="brand-logo-one" alt="Images">
+                <img src="{% static 'assets/images/brand-logo/poly.png' %}" class="brand-logo-two" alt="Images">
             </div>
         </div>
     </div>
@@ -676,7 +700,7 @@
     </div>
 </section>
 <!-- Clients Area End -->
-
+{% comment %} 
 <!-- Blog Area -->
 <div class="blog-area pt-100 pb-70">
     <div class="container">
@@ -780,6 +804,6 @@
         </div>
     </div>
 </div>
-<!-- Blog Area End -->
+<!-- Blog Area End --> {% endcomment %}
 
 {% endblock body %}

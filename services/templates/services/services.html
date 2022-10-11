@@ -15,10 +15,10 @@
 <div class="inner-banner">
   <div class="container">
     <div class="inner-title text-center">
-      <h3>Services Style One</h3>
+      <h3>Services</h3>
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href="{% url 'Home' %}">Home</a>
         </li>
         <li>
           <i class="bx bx-chevrons-right"></i>
@@ -46,7 +46,7 @@
     <div class="row pt-45">
       <div class="col-lg-4 col-md-6">
         <div class="services-item">
-          <a href="service-details.html">
+          <a href="{% url 'Vicisoft' %}">
             <img
               src="{% static 'assets/images/services/services-img1.jpg' %}"
               alt="Images"
@@ -54,7 +54,7 @@
           </a>
           <div class="content">
             <h3>
-              <a href="service-details.html">Vicisoft Software Solutions</a>
+              <a href="{% url 'Vicisoft' %}">Vicisoft Software Solutions</a>
             </h3>
           </div>
         </div>
@@ -62,70 +62,70 @@
 
       <div class="col-lg-4 col-md-6">
         <div class="services-item">
-          <a href="service-details.html">
+          <a href="{% url 'Escan' %}">
             <img
               src="{% static 'assets/images/services/services-img2.jpg' %}"
               alt="Images"
             />
           </a>
           <div class="content">
-            <h3><a href="service-details.html">eScan range of Antivirus</a></h3>
+            <h3><a href="{% url 'Escan' %}">eScan range of Antivirus</a></h3>
           </div>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6">
         <div class="services-item">
-          <a href="service-details.html">
+          <a href="{% url 'SharpEducation' %}">
             <img
               src="{% static 'assets/images/services/services-img3.jpg' %}"
               alt="Images"
             />
           </a>
           <div class="content">
-            <h3><a href="service-details.html">Sharp Education Solution</a></h3>
+            <h3><a href="{% url 'SharpEducation' %}">Sharp Education Solution</a></h3>
           </div>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6">
         <div class="services-item">
-          <a href="service-details.html">
+          <a href="{% url 'NetcoreCloud' %}">
             <img
               src="{% static 'assets/images/services/services-img4.jpg' %}"
               alt="Images"
             />
           </a>
           <div class="content">
-            <h3><a href="service-details.html">Netcore Email</a></h3>
+            <h3><a href="{% url 'NetcoreCloud' %}">Netcore Email</a></h3>
           </div>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6">
         <div class="services-item">
-          <a href="service-details.html">
+          <a href="{% url 'Networking' %}">
             <img
               src="{% static 'assets/images/services/services-img5.jpg' %}"
               alt="Images"
             />
           </a>
           <div class="content">
-            <h3><a href="service-details.html">D-link Networking</a></h3>
+            <h3><a href="{% url 'Networking' %}">D-link Networking</a></h3>
           </div>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6">
         <div class="services-item">
-          <a href="service-details.html">
+          <a href="{% url 'EndpointSecurity' %}">
             <img
               src="{% static 'assets/images/services/services-img6.jpg' %}"
               alt="Images"
             />
           </a>
           <div class="content">
-            <h3><a href="service-details.html">End-point Security</a></h3>
+            <h3><a href="{% url 'EndpointSecurity' %}">End-point Security</a></h3>
           </div>
         </div>
       </div>
@@ -230,77 +230,53 @@
   <div class="container">
     <div class="brand-slider owl-carousel owl-theme">
       <div class="brand-item">
-        <img
-          src="{% static 'assets/images/brand-logo/brand-logo1.png' %}"
-          class="brand-logo-one"
-          alt="Images"
-        />
-        <img
-          src="{% static 'assets/images/brand-logo/brand-style1.png' %}"
-          class="brand-logo-two"
-          alt="Images"
-        />
-      </div>
-      <div class="brand-item">
-        <img
-          src="{% static 'assets/images/brand-logo/brand-logo2.png' %}"
-          class="brand-logo-one"
-          alt="Images"
-        />
-        <img
-          src="{% static 'assets/images/brand-logo/brand-style2.png' %}"
-          class="brand-logo-two"
-          alt="Images"
-        />
-      </div>
-      <div class="brand-item">
-        <img
-          src="{% static 'assets/images/brand-logo/brand-logo3.png' %}"
-          class="brand-logo-one"
-          alt="Images"
-        />
-        <img
-          src="{% static 'assets/images/brand-logo/brand-style3.png' %}"
-          class="brand-logo-two"
-          alt="Images"
-        />
-      </div>
-      <div class="brand-item">
-        <img
-          src="{% static 'assets/images/brand-logo/brand-logo4.png' %}"
-          class="brand-logo-one"
-          alt="Images"
-        />
-        <img
-          src="{% static 'assets/images/brand-logo/brand-style4.png' %}"
-          class="brand-logo-two"
-          alt="Images"
-        />
-      </div>
-      <div class="brand-item">
-        <img
-          src="{% static 'assets/images/brand-logo/brand-logo5.png' %}"
-          class="brand-logo-one"
-          alt="Images"
-        />
-        <img
-          src="{% static 'assets/images/brand-logo/brand-style5.png' %}"
-          class="brand-logo-two"
-          alt="Images"
-        />
-      </div>
-      <div class="brand-item">
-        <img
-          src="{% static 'assets/images/brand-logo/brand-logo3.png' %}"
-          class="brand-logo-one"
-          alt="Images"
-        />
-        <img
-          src="{% static 'assets/images/brand-logo/brand-style3.png' %}"
-          class="brand-logo-two"
-          alt="Images"
-        />
-      </div>
+        <img src="{% static 'assets/images/brand-logo/kaspersky.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/kaspersky.png' %}" class="brand-logo-two" alt="Images">
+    </div>
+    <div class="brand-item">
+        <img src="{% static 'assets/images/brand-logo/apc.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/apc.png' %}" class="brand-logo-two" alt="Images">
+    </div>
+    <div class="brand-item">
+        <img src="{% static 'assets/images/brand-logo/bitdefender.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/bitdefender.png' %}" class="brand-logo-two" alt="Images">
+    </div>
+    <div class="brand-item">
+        <img src="{% static 'assets/images/brand-logo/canon.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/canon.png' %}" class="brand-logo-two" alt="Images">
+    </div>
+    <div class="brand-item">
+        <img src="{% static 'assets/images/brand-logo/cisco.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/cisco.png' %}" class="brand-logo-two" alt="Images">
+    </div>
+    <div class="brand-item">
+        <img src="{% static 'assets/images/brand-logo/dell.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/dell.png' %}" class="brand-logo-two" alt="Images">
+    </div>
+    <div class="brand-item">
+        <img src="{% static 'assets/images/brand-logo/epson.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/epson.png' %}" class="brand-logo-two" alt="Images">
+    </div>
+    <div class="brand-item">
+        <img src="{% static 'assets/images/brand-logo/fortinet.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/fortinet.png' %}" class="brand-logo-two" alt="Images">
+    </div>
+    <div class="brand-item">
+        <img src="{% static 'assets/images/brand-logo/hp.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/hp.png' %}" class="brand-logo-two" alt="Images">
+    </div>
+    <div class="brand-item">
+        <img src="{% static 'assets/images/brand-logo/lenovo.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/lenovo.png' %}" class="brand-logo-two" alt="Images">
+    </div>
+    <div class="brand-item">
+        <img src="{% static 'assets/images/brand-logo/microsoft.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/microsoft.png' %}" class="brand-logo-two" alt="Images">
+    </div>
+    <div class="brand-item">
+        <img src="{% static 'assets/images/brand-logo/poly.png' %}" class="brand-logo-one" alt="Images">
+        <img src="{% static 'assets/images/brand-logo/poly.png' %}" class="brand-logo-two" alt="Images">
+    </div>
     </div>
   </div>
 </div>

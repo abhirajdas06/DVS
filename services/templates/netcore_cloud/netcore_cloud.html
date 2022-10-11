@@ -18,12 +18,12 @@
       <h3>Netcore Cloud</h3>
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href="{% url 'Home' %}">Home</a>
         </li>
         <li>
           <i class="bx bx-chevrons-right"></i>
         </li>
-        <li>Netcore Cloud</li>
+        <li><a href="{% url 'Services' %}">Services</a></li>
       </ul>
     </div>
   </div>
@@ -47,7 +47,7 @@
     <div class="row pt-45">
       <div class="col-lg-4 col-md-6">
         <div class="case-study-item">
-          <a href="case-details.html">
+          <a href="{% url 'Security' %}">
             <img
               src="{% static 'assets/images/services/email_s.jpg' %}"
               alt="Images"
@@ -55,13 +55,13 @@
           </a>
           <div class="content">
             <h3>
-              <a href="case-details.html">Hosted Email Security</a>
+              <a href="{% url 'Security' %}">Security</a>
             </h3>
             <ul>
-              <li><a href="case-details.html">Services</a></li>
-              <li><a href="case-details.html"> Netcore Cloud </a></li>
+              <li><a href="{% url 'Services' %}">Services</a></li>
+              <li><a href="{% url 'NetcoreCloud' %}"> Netcore Cloud </a></li>
             </ul>
-            <a href="case-details.html" class="more-btn"
+            <a href="{% url 'Security' %}" class="more-btn"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
@@ -70,19 +70,19 @@
 
       <div class="col-lg-4 col-md-6">
         <div class="case-study-item">
-          <a href="case-details.html">
+          <a href="{% url 'EmailArchive' %}">
             <img
               src="{% static 'assets/images/services/email_a.jpg' %}"
               alt="Images"
             />
           </a>
           <div class="content">
-            <h3><a href="case-details.html">Email Archive</a></h3>
+            <h3><a href="{% url 'EmailArchive' %}">Email Archive</a></h3>
             <ul>
-              <li><a href="case-details.html">Services</a></li>
-              <li><a href="case-details.html">Mail Infrastructure</a></li>
+              <li><a href="{% url 'Services' %}">Services</a></li>
+              <li><a href="{% url 'NetcoreCloud' %}">Netcore Cloud</a></li>
             </ul>
-            <a href="case-details.html" class="more-btn"
+            <a href="{% url 'EmailArchive' %}" class="more-btn"
               ><i class="bx bx-right-arrow-alt"></i
             ></a>
           </div>
